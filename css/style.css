@@ -1,0 +1,184 @@
+/* Палитра макета */
+/* основно фон #FFFFFF */
+/* дополнительный фон #F5F4FA */
+/* цвет героя и футера #2F303A */
+/* основнй текст #757575 */
+/* Заголовки #212121 */
+/* цвет лого, кнопок, активных ссылок #2196F3 */
+/* лого1 вторая часть #000000 */
+/* лого2 вторая часть #ffffff */
+:root {
+  --primary-text-color: #757575;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-hero-bg-color: #2f303a;
+  --titel-link-color: #212121;
+  --secondary-link-color: #757575;
+  --accent-color: #2196f3;
+  --logo-up-color: #000000;
+  --logo-down-color: #ffffff;
+  --address-color: #ffffff;
+  --address-secondary-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primery-bg-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.titel {
+  color: var(--titel-link-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+/* .header {
+  border: 1px solid #ececec;
+} */
+/* Логотип */
+.logo {
+  color: var(--logo-up-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  width: 145px;
+  height: 31px;
+  /* margin-left: 215px;
+  margin-top: 24px; */
+}
+.footer > .logo {
+  color: var(--logo-down-color);
+}
+.logo-text {
+  color: var(--accent-color);
+}
+/* Навигация сайта */
+.nav > .list .link {
+  color: var(--titel-link-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav > .list .link:hover,
+.nav > .list .link:focus {
+  color: var(--accent-color);
+}
+.nav > .list .link.current {
+  color: var(--accent-color);
+}
+/* контакты */
+.contacts .link {
+  color: var(--secondary-link-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+/* Блок герой */
+.hero {
+  background-color: var(--footer-hero-bg-color);
+  /* width: 1600px;
+  height: 600px; */
+}
+.hero-titel {
+  color: var(--primary-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+}
+/* Блок Наши приимущества */
+.advantages .titel {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: start;
+}
+/* Блок Каманда */
+.team {
+  /* width: 1600px;
+  height: 648px; */
+  background-color: var(--secondary-bg-color);
+}
+.card {
+  width: 270px;
+  height: 368px;
+  background-color: var(--primary-bg-color);
+}
+.card > .titel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.card > .text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/* Футер */
+.footer {
+  background-color: var(--footer-hero-bg-color);
+}
+.address {
+  color: var(--address-color);
+  font-style: normal;
+}
+.address .link {
+  color: var(--address-secondary-color);
+}
+/* кнопки галереии */
+.galerry-button {
+  color: var(--titel-link-color);
+  background-color: var(--secondary-bg-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+}
+.galerry-button:hover,
+.galerry-button:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+/* Карты галереи */
+.galerry-card {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+.galerry-card .titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: start;
+}
