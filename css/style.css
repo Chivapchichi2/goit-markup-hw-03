@@ -289,6 +289,15 @@ body {
 .address .link:focus {
   color: var(--accent-color);
 }
+/* Портфолио */
+.galerry {
+  width: 1600px;
+}
+.galerry > .list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 /* кнопки галереии */
 .galerry-button {
   color: var(--titel-link-color);
