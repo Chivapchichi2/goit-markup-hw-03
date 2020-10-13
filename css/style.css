@@ -159,6 +159,8 @@ body {
   line-height: 1.88;
   height: 50px;
   width: 200px;
+  border: none;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
