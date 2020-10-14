@@ -54,16 +54,22 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-}
-/* Шапка сайта */
-.header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #ececec;
-  height: 80px;
   width: 1600px;
   padding-left: 215px;
   padding-right: 215px;
+}
+.container:nth-child(2),
+.container:nth-child(3),
+.container:nth-child(4) {
+  padding-bottom: 94px;
+}
+/* Шапка сайта */
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav {
   display: flex;
@@ -85,7 +91,7 @@ body {
   height: 31px;
   margin-right: 93px;
 }
-.footer > .logo {
+.footer .logo {
   color: var(--logo-down-color);
 }
 .logo-text {
@@ -132,8 +138,8 @@ body {
 /* Блок герой */
 .hero {
   background-color: var(--footer-hero-bg-color);
-  height: 600px;
-  width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,10 +175,7 @@ body {
 }
 /* Блок Наши приимущества */
 .advantages {
-  width: 1600px;
-  margin-top: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
+  padding-top: 94px;
 }
 .advantages > .list {
   display: flex;
@@ -194,12 +197,8 @@ body {
 .advantages .item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* Блок Work  */
-.work {
-  width: 1600px;
-  margin-top: 94px;
-  padding-bottom: 94px;
-}
 .work > .titel {
   margin: 0;
 }
@@ -208,21 +207,16 @@ body {
   justify-content: center;
   margin-top: 50px;
 }
-
 .work > .list > .item:not(:last-child) {
   margin-right: 30px;
 }
 .work > .list > .item > img {
   display: block;
 }
+
 /* Блок Каманда */
 .team {
-  width: 1600px;
   background-color: var(--secondary-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 .team > .titel {
   margin: 0;
@@ -235,8 +229,6 @@ body {
   margin-right: 30px;
 }
 .card {
-  width: 270px;
-  /* height: 368px; */
   background-color: var(--primary-bg-color);
 }
 .card > .titel {
@@ -258,10 +250,8 @@ body {
   display: block;
 }
 /* Футер */
-.footer {
+.footer > .container {
   background-color: var(--footer-hero-bg-color);
-  width: 1600px;
-  padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
@@ -288,9 +278,8 @@ body {
 }
 /* Портфолио */
 .galerry {
-  width: 1170px;
-  margin-bottom: 94px;
-  margin-top: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .galerry > .list {
   display: flex;
@@ -331,12 +320,9 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: start;
-  width: 322px;
   margin: 0;
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 4px;
+  padding-top: 20px;
+  padding-bottom: 4px;
 }
 .galerry-card:not(:nth-child(3n + 3)) {
   margin-right: 30px;
@@ -352,8 +338,12 @@ body {
 }
 .galerry-card p {
   display: block;
-  width: 322px;
   margin: 0;
-  margin-right: 24px;
-  margin-left: 24px;
+}
+.info {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
