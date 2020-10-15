@@ -54,9 +54,9 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 1600px;
-  padding-left: 215px;
-  padding-right: 215px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .container:nth-child(2),
 .container:nth-child(3),
@@ -64,10 +64,17 @@ body {
   padding-bottom: 94px;
 }
 /* Шапка сайта */
+.header {
+  border-bottom: 1px solid #ececec;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1600px;
+  padding: 0px 200px;
+}
 .header > .container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
+
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -137,9 +144,13 @@ body {
 }
 /* Блок герой */
 .hero {
+  width: 1600px;
   background-color: var(--footer-hero-bg-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero > .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,6 +227,7 @@ body {
 /* Блок Каманда */
 .team {
   background-color: var(--secondary-bg-color);
+  padding-top: 94px;
 }
 .team > .titel {
   margin: 0;
@@ -249,10 +261,14 @@ body {
   display: block;
 }
 /* Футер */
-.footer > .container {
+.footer {
   background-color: var(--footer-hero-bg-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  width: 1600px;
+  padding: 60px 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer > .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -276,16 +292,15 @@ body {
   color: var(--accent-color);
 }
 /* Портфолио */
-.galerry {
-  padding-bottom: 94px;
-  padding-top: 94px;
+.galerry > .container {
+  padding: 94px 15px;
 }
-.galerry > .list {
+.galerry > .container > .list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.galerry > .list:first-of-type {
+.galerry .list:first-of-type {
   margin-bottom: 50px;
 }
 .galerry .item:not(:last-child) {
